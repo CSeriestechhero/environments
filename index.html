@@ -1,24 +1,37 @@
+
 <!DOCTYPE html>
-<head id="body">
+<head>
 <title>Environments | BETA</title>
 <script>
-var elem = document.getElementById("body");
-function openFullscreen() {
-  if (elem.requestFullscreen) {
-    elem.requestFullscreen();
-  } else if (elem.webkitRequestFullscreen) { /* Safari */
-    elem.webkitRequestFullscreen();
-  } else if (elem.msRequestFullscreen) { /* IE11 */
-    elem.msRequestFullscreen();
-  }
+function fullScreen() {
+    var el = document.documentElement
+    , rfs = // for newer Webkit and Firefox
+       el.requestFullScreen
+    || el.webkitRequestFullScreen
+    || el.mozRequestFullScreen
+    || el.msRequestFullScreen
+    ;
+
+    if(typeof rfs!="undefined" && rfs){
+
+        rfs.call(el);
+
+    } else if(typeof window.ActiveXObject!="undefined"){
+
+        // for Internet Explorer
+        var wscript = new ActiveXObject("WScript.Shell");
+
+        if (wscript!=null) {
+          wscript.SendKeys("{F11}");
+        }
+    }
+
 }
 </script>
-
-
 <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/CSeriestechhero/LCTsearch/main/lctsearch%20(2).png">
 <meta name="theme-color" content="#113232">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<body onload="bFunction(); cFunction(); dFunction(); eFunction(); launch_toast(); openFullscreen();">
+<body id="body" onload="bFunction(); cFunction(); dFunction(); eFunction(); launch_toast(); fullScreen();">
 
 <style>
 body {
@@ -272,7 +285,7 @@ border-radius: 10px 0p;
 
   <div id="appdivheader">Environments BETA
 </div>
-<body>
+
 
 
 
