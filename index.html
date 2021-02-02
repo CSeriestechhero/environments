@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<title>Environments | BETA</title>
+<link rel="icon" 
+      type="image/png" 
+      href="https://raw.githubusercontent.com/CSeriestechhero/LCTsearch/main/lctsearch%20(2).png">
+<meta name="theme-color" content="#af0a0a">
+<meta name="viewport" content="width=device-width, initial-scale=1"><body onload="launch_toast()"><head onload="launch_toast()"><div ></div>
+<iframe id="ifr1" style="position: absolute;width: 100vw;height: 100vh; border: none;" src="https://cseriestechhero.github.io/Command-prompt.lct/prompt"></iframe>
+<iframe id="ifr2" style="position: absolute;width: 100vw;height: 100vh; border: none;" src="https://cseriestechhero.github.io/Command-prompt.lct/prompt"></iframe>
+<iframe id="ifr3" style="position: absolute;width: 100vw;height: 100vh; border: none;" src="https://cseriestechhero.github.io/Command-prompt.lct/prompt"></iframe>
+<iframe id="ifr4" style="position: absolute;width: 100vw;height: 100vh; border: none;" src="https://cseriestechhero.github.io/LCTsearch"></iframe>
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+
+}
+
+.navbar {
+  overflow: hidden;
+z-index: 99999;
+  background-color: #11111188;
+  backdrop-filter: blur(10px);
+  border-radius: 25px 25px 0px 0px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 3px;
+}
+
+.navbar a, .navbar button, .ripple, button.showbtn {
+  float: left;
+  font-family: Roboto, Helvetica, Arial; 
+font-weight: 600;
+  display: block;
+  color: #f2f2f2;
+  background-color: #ffffff22;
+ border-radius: 100px;
+  text-align: center;
+  border: none;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+</style>
+</head>
+
+<div id="myDIV" class="navbar">  
+ <a style="font-weight: 900;font-size: 14; padding: 8px 13px;" onclick="openNav()">◯</a>
+  <div style="padding: 0px 45vw;"><button style="position: relative; padding left: 0!important; right:0!important;margin:auto;" type="button" onclick="aFunction()" >Welcome</button>
+<button style="" type="button" onclick="bFunction()" >1</button></div>
+<button style="" type="button" onclick="cFunction()" >2</button>
+<button style="" type="button" onclick="dFunction()" >3</button>
+<button style="" type="button" onclick="eFunction()" >4</button>
+<button style="float: right;font-size: 14px;" onclick="myFunction()" title="hide navigation shelf"><strong>▽</strong></button> <a style="float: right;" onclick="launch_toast()">News</a>
+
+</div><button class="showbtn" style="position: fixed; right: 0; bottom:0;" onclick="myFunction()">˄</button><style>
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  border-radius: 25px 25px 0px 0px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: #11111188;
+ backdrop-filter: blur(6px);
+  color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+ 
+}
+
+.overlay a {
+  
+  text-decoration: none;
+  
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+p.app_title {
+  position: absolute;
+left: 4px;
+z-index: 99999;
+}
+.overlay .closebtn {
+  position: absolute;
+top: 5px;
+  right: 4px;
+  font-size: 20px;
+  padding:3px 10px;
+}
+
+@media screen {
+  
+  .overlay .closebtn {
+z-index:99999;
+  }
+</style>
+
+
+
+<div style="z-index:30;"id="myNav" class="overlay">
+<p style="top:5px;padding:3px 10px; background-color:black;border-radius:100px;" class="app_title">Contact LCTapps</p>
+  <a style="padding: 4px 4px;height:2%px;background-color:black;border-radius:100px;" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeSvCRie2uxs17LDmNbISX7BT0PpPFAc6BsgKxWP6JwsI-PEA/viewform?embedded=true" width="100%" height="100%" style="border: none;"></iframe>
+  </div>
+</div>
+
+
+</div>
+<script>
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+</script></div>
+<style>body{background-color: 113232;color:white;font-family: Roboto;}#toast {
+    visibility: hidden;
+    max-width: 50px;
+   backdrop-filter:blur(6px);
+    height: 50px;
+    /*margin-left: -125px;*/
+    margin: auto;
+    background-color: #01010133;
+    color: black;
+    text-align: center;
+    border-radius: 2px;
+    border-radius: 6px 6px 6px 6px;
+    position: fixed;
+    z-index: 99999;
+    left: 0;right:0;
+    bottom: 30px;
+    font-size: 17px;
+    white-space: nowrap;
+}
+#toast #img{
+	width: 50px;
+	height: 50px;
+    z-index: 99999;
+    float: left;
+    
+    padding-top: 16px;
+    padding-bottom: 20px;
+    
+    box-sizing: border-box;
+
+       border-radius: 8px 0px 0px 8px; 
+    background-color: #aaaaaa33;
+    color: #ffffffcc;
+}
+#toast #desc{
+
+    z-index: 99999;
+    color: #ffffffcc;
+    padding: 16px;
+    border-radius: 6px 6px 6px 6px;
+    overflow: hidden;
+	white-space: nowrap;
+}
+
+#toast.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, expand 0.5s 0.5s,stay 3s 1s, shrink 0.5s 2s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, expand 0.5s 0.5s,stay 3s 1s, shrink 0.5s 4s, fadeout 0.5s 4.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes expand {
+    from {min-width: 50px} 
+    to {min-width: 350px}
+}
+
+@keyframes expand {
+    from {min-width: 50px}
+    to {min-width: 350px}
+}
+@-webkit-keyframes stay {
+    from {min-width: 350px} 
+    to {min-width: 350px}
+}
+
+@keyframes stay {
+    from {min-width: 350px}
+    to {min-width: 350px}
+}
+@-webkit-keyframes shrink {
+    from {min-width: 350px;} 
+    to {min-width: 50px;}
+}
+
+@keyframes shrink {
+    from {min-width: 350px;} 
+    to {min-width: 50px;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 60px; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 60px; opacity: 0;}
+}</style>
+
+
+<div id="toast"><div id="img">News</div><div id="desc">Added special bar at the bottom</div></div>
+
+<!-- http://jsfiddle.net/m8x1g0q8/ --><script>function launch_toast() {
+    var x = document.getElementById("toast")
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+
+}</script>
+
+
+
+
+
+<style>
+#appdiv {
+  position: absolute;
+  z-index: 9;
+border-radius: 10px 0p;
+  background-image: url("file:///media/fuse/drivefs-bfda94ce248accedf481b7a4a8592d2a/root/image%20(1).png");
+        background-color:#af0a0a;
+       background-size:cover;
+  text-align: center;
+  border: 1px solid ;
+}
+
+#appdivheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #000000;
+  color: #fff;
+}
+</style>
+<body>
+
+
+
+<div id="appdiv">
+
+  <div id="appdivheader">Environments BETA
+</div>
+
+</head>
+<body>
+
+
+
+<h1>Welcome to Environments!</h1><br><p>Environments is a online desktop made simply to let you browse the web with iframes. <br>To open new environments, press 1, 2, 3, etc...<br>To hide the bar (if there is content you need to select and the shelf is in the way) press the down triangle<br>If you would like to submit suggestions, click the circle button and fill out the form.<br>[This was inspired by the ChromeOS UI]<br>To get things going, go to the bar on the bottom and press "Welcome"</p>
+
+
+</div>
+
+<script>
+//Make the DIV element draggagle:
+dragElement(document.getElementById("appdiv"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
+
+
+</body>
+</html>
+
+ 
+
+
+
+ 
+
+
+
+
+
+</body>
+</html>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script><script>
+function aFunction() {
+  var x = document.getElementById("appdiv");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script><script>
+function bFunction() {
+  var x = document.getElementById("ifr1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script><script>
+function cFunction() {
+  var x = document.getElementById("ifr2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script><script>
+function dFunction() {
+  var x = document.getElementById("ifr3");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script><script>
+function eFunction() {
+  var x = document.getElementById("ifr4");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
