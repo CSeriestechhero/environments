@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <title>Environments | BETA</title>
 <link rel="icon" 
       type="image/png" 
       href="https://raw.githubusercontent.com/CSeriestechhero/LCTsearch/main/lctsearch%20(2).png">
 <meta name="theme-color" content="#113232">
-<meta name="viewport" content="width=device-width, initial-scale=1"><body onload="launch_toast()"><head onload="launch_toast()"><div ></div>
+<meta name="viewport" content="width=device-width, initial-scale=1"><body onload="bFunction();cFunction();dFunction();eFunction();launch_toast();"><head onload="launch_toast()"><div ></div>
 <iframe id="ifr1" style="position: absolute;width: 100vw;height: 100vh; border: none;" src="https://cseriestechhero.github.io/Command-prompt.lct/prompt"></iframe>
 <iframe id="ifr2" style="position: absolute;width: 100vw;height: 100vh; border: none;" src="https://cseriestechhero.github.io/Command-prompt.lct/prompt"></iframe>
 <iframe id="ifr3" style="position: absolute;width: 100vw;height: 100vh; border: none;" src="https://cseriestechhero.github.io/Command-prompt.lct/prompt"></iframe>
@@ -51,12 +52,12 @@ font-weight: 600;
 
 <div id="myDIV" class="navbar">  
  <a style="font-weight: 900;font-size: 14; padding: 8px 13px;" onclick="openNav()">◯</a>
-  <div style="padding: 0px 45vw;"><button style="position: relative; padding left: 0!important; right:0!important;margin:auto;" type="button" onclick="aFunction()" >Welcome</button>
-<button style="" type="button" onclick="bFunction()" >1</button></div>
-<button style="" type="button" onclick="cFunction()" >2</button>
-<button style="" type="button" onclick="dFunction()" >3</button>
-<button style="" type="button" onclick="eFunction()" >4</button>
-<button style="float: right;font-size: 14px;" onclick="myFunction()" title="hide navigation shelf"><strong>▽</strong></button> <a style="float: right;" onclick="launch_toast()">News</a>
+  <div style="padding: 0px 43vw;"><button style="position: relative; padding left: 0!important; right:0!important;margin:auto;" type="button" id="auto" onclick="aFunction()" >Welcome</button>
+<button style="" type="button"  onclick="bFunction()" >1</button></div>
+<button style="" type="button"  onclick="cFunction()" >2</button>
+<button style="" type="button"  onclick="dFunction()" >3</button>
+<button style="" type="button"  onclick="eFunction()" >4</button>
+<button style="float: right;font-size: 14px;" onclick="myFunction()" title="hide navigation shelf"><strong>▽</strong></button>
 
 </div><button class="showbtn" style="position: fixed; right: 0; bottom:0;" onclick="myFunction()">˄</button><style>
 .overlay {
@@ -234,7 +235,7 @@ function closeNav() {
 }</style>
 
 
-<div id="toast"><div id="img">News</div><div id="desc">Added special bar at the bottom</div></div>
+<div id="toast"><div id="img">!</div><div id="desc">Welcome!</div></div>
 
 <!-- http://jsfiddle.net/m8x1g0q8/ --><script>function launch_toast() {
     var x = document.getElementById("toast")
@@ -393,15 +394,28 @@ function dFunction() {
   } else {
     x.style.display = "none";
   }
-}
+}/
 </script><script>
 function eFunction() {
   var x = document.getElementById("ifr4");
+
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
     x.style.display = "none";
   }
+}
+
+function start(){
+aFunction();
+bFunction();
+cFunction();
+dFunction();
+eFunction();
+myFunction();
+}
+function toggleOnLoad() {
+    document.getElementById('ifr4').style.display = 'none';
 }
 </script>
 
