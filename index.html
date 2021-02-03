@@ -159,7 +159,7 @@ font-weight: 600;
 <button style="" type="button"  onclick="dFunction()" >3</button>
 <button style="" type="button"  onclick="eFunction()" >4</button>
 
-<button style="float: right;font-size: 14px;" onclick="myFunction()" title="hide navigation shelf"><strong>▽</strong></button><div style="float:right;" class="stat"><span><strong class="battery-percentage"></strong></span><span>　</span><span style="float:right;" id="currentTime" ></span></div>
+<button style="float: right;font-size: 14px;" onclick="myFunction()" title="hide navigation shelf"><strong>▽</strong></button><div style="float:right;" class="stat"></span><span style="float:right;" id="currentTime" ></span></div>
 
 </div><button class="showbtn" style="position: fixed; right: 0; bottom:0;" onclick="myFunction()">˄</button><style>
 .overlay {
@@ -345,7 +345,7 @@ background-position: center;
     from {bottom: 30px; opacity: 1;}
     to {bottom: 60px; opacity: 0;}
 }</style>
-<div id="toast"><div id="img">!</div><div id="desc">Welcome!</div></div>
+<div id="toast"><div id="img"><span><strong class="battery-percentage"></strong></span><span></div><div id="desc">Power source: <span class="battery-status"></span></div></div>
 
 <!-- http://jsfiddle.net/m8x1g0q8/ --><script>function launch_toast() {
     var x = document.getElementById("toast")
