@@ -100,7 +100,7 @@ function fullScreen() {
 <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/CSeriestechhero/LCTsearch/main/lctsearch%20(2).png">
 <meta name="theme-color" content="#113232">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<body id="body" onload="bFunction(); cFunction(); dFunction(); eFunction(); launch_toast(); fullScreen();">
+<body id="body" onload="bFunction(); cFunction(); dFunction(); eFunction(); launch_toast(); fullScreen(); clock();">
 
 <style>
 body {
@@ -511,8 +511,7 @@ myFunction();
       localStorage.setItem('back',url);
     }
 </script>
-<script type="text/javascript">window.onload = function () {
-  clock();
+<script type="text/javascript">
   function clock() {
     var now = new Date();
     var TwentyFourHour = now.getHours();
@@ -535,7 +534,7 @@ myFunction();
     document.getElementById('currentTime').innerHTML = hour + ':' + min + ' ' + mid;
     setTimeout(clock, 1000);
   }
-}
+
 
 
 </script>  
